@@ -2,21 +2,21 @@ WeatherFlow - Real-Time Weather Analytics Platform
 ![Python](https://img.shields.io/img.shields.-time weather analytics platform that automatically collects weather data from OpenWeatherMap API, processes it through an ETL pipeline, and stores it in MySQL database. The system features an interactive Streamlit dashboard with dynamic charts and multi-city monitoring capabilities, showcasing end-to-end data engineering skills from API integration to visual analytics.
 
 🌟 Features
-Automated ETL Pipeline: Continuous data extraction, transformation, and loading
+1. Automated ETL Pipeline: Continuous data extraction, transformation, and loading
+ 
+2. Multi-City Monitoring: Track weather across multiple global cities
 
-Multi-City Monitoring: Track weather across multiple global cities
+3. Interactive Dashboard: Real-time web interface with dynamic visualizations
 
-Interactive Dashboard: Real-time web interface with dynamic visualizations
+4. Historical Analytics: Trend analysis and pattern recognition
 
-Historical Analytics: Trend analysis and pattern recognition
+5. Scheduled Processing: Hourly data collection with error handling
 
-Scheduled Processing: Hourly data collection with error handling
+6. Data Validation: Comprehensive data quality checks and cleaning
 
-Data Validation: Comprehensive data quality checks and cleaning
+7. Responsive Design: Mobile-friendly dashboard interface
 
-Responsive Design: Mobile-friendly dashboard interface
-
-Auto-Refresh: Real-time dashboard updates
+8. Auto-Refresh: Real-time dashboard updates
 
 Technology Stack
 
