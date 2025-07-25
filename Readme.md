@@ -19,12 +19,11 @@ WeatherFlow - Real-Time Weather Analytics Platform
 🔄 Auto-Refresh: Real-time dashboard updates
 
 🛠️ Technology Stack
-Component	Technology
-Backend	Python 3.8+
-Data Processing	Pandas, NumPy
-Database	MySQL 8.0+
-API Integration	OpenWeatherMap REST API
-Web Framework	Streamlit
-Visualization	Plotly
-Task Scheduling	Python Schedule
-Environment Management	python-dotenv
+
+Backend	Python: 3.8+
+
+Data Processing: Pandas, NumPy
+Database: MySQL 8.0+
+API Integration: OpenWeatherMap
+Web Framework : Streamlit
+Visualization : Plotly
