@@ -3,6 +3,4 @@ pandas==2.0.3
 mysql-connector-python==8.1.0
 python-dotenv==1.0.0
 schedule==1.2.0
-
-
-pip install requests pandas mysql-connector-python python-dotenv schedule
+plotly

@@ -28,5 +28,5 @@ Technology Stack
 - **API Integration**: OpenWeatherMap REST API
 - **Web Framework**: Streamlit
 - **Visualization**: Plotly
-- **Task Scheduling**: Python Schedule
+- **Task Scheduling**: Python Schedule - Runs Every One Hour
 - **Environment Management**: python-dotenv

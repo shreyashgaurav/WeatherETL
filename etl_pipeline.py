@@ -58,10 +58,10 @@ class WeatherETLPipeline:
 def main():
     pipeline = WeatherETLPipeline()
     
-    # Run immediately
+    
     pipeline.run_pipeline()
     
-    # Schedule to run every hour
+    # Scheduling to run every hour
     schedule.every().hour.do(pipeline.run_pipeline)
     
     # Keep the script running
