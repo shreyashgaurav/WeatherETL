@@ -285,24 +285,35 @@ def main():
     # Detailed Data Table
     st.markdown("---")
     st.subheader("📋 Detailed Data")
-    
+
     # City selector
     selected_city = st.selectbox(
         "Select City for Detailed View:",
         ["All Cities"] + list(latest_data['city'].unique())
     )
-    
+
     if selected_city == "All Cities":
         display_data = historical_data.head(50)
     else:
         display_data = dashboard.get_city_data(selected_city, days_range)
-    
+
     if not display_data.empty:
-        st.dataframe(
-            display_data[['city', 'temperature', 'humidity', 'pressure', 
-                         'weather_main', 'wind_speed', 'data_timestamp']],
-            use_container_width=True
-        )
+        # Define the desired columns and filter only those that exist
+        desired_columns = ['city', 'temperature', 'humidity', 'pressure', 
+                        'weather_main', 'wind_speed', 'data_timestamp']
+        
+        # Get only the columns that actually exist in the DataFrame
+        available_columns = [col for col in desired_columns if col in display_data.columns]
+        
+        if available_columns:
+            st.dataframe(
+                display_data[available_columns],
+                use_container_width=True
+            )
+        else:
+            # Fallback: show all columns if none of the desired ones exist
+            st.dataframe(display_data, use_container_width=True)
+
     
     # Footer
     st.markdown("---")
